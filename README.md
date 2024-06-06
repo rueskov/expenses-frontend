@@ -19,3 +19,11 @@ nvm install 16
 
 nvm use 16
 ```
+
+### Available endpoints:
+
+/login
+
+/register
+
+/ or /expenses
