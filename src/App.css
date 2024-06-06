@@ -1,3 +1,19 @@
+/* src/App.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, button, input, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +27,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+body {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .App-header {
@@ -35,4 +56,106 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+button {
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0044cc;
+  color: white;
+  width: 150px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #003bb5;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.expenseList {
+  width: 100px;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+span {
+  margin: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 0;
 }
